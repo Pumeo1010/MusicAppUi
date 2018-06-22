@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import MusicAppUi from './App';
 
-AppRegistry.registerComponent('MusicAppUi', () => App);
+AppRegistry.registerComponent('MusicAppUi', () => MusicAppUi);
