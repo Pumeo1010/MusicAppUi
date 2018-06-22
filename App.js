@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, Image, PanResponder, Animated, Dimensions
+  View, Image, PanResponder, Animated, Dimensions, SafeAreaView
 } from 'react-native';
 
 const screenHeight = Dimensions.get('window').height;
@@ -91,9 +91,7 @@ export default class MusicAppUi extends React.Component {
     });
 
     return (
-      <Animated.View
-        style={{ flex: 1, backgroundColor: 'pink' }}
-      >
+      <SafeAreaView style={{ flex: 1, backgroundColor: 'pink' }}>
         <Animated.View
           {...this._panResponder.panHandlers}
           style={[playingBar,
@@ -124,7 +122,7 @@ export default class MusicAppUi extends React.Component {
           </Animated.View>
 
         </Animated.View>
-      </Animated.View>
+      </SafeAreaView>
     );
   }
 }
